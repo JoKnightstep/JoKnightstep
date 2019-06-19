@@ -8,3 +8,9 @@ let alertFunction = function() {
 };
 
 imageElement.addEventListener('click', alertFunction);
+
+const name = prompt(Hi there! My name is Jo!);
+const output = document.querySelector(#greeting);
+output.teextContent = "Thanks for visiting," "+ name +".";
+
+
