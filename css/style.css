@@ -12,7 +12,12 @@ a:link, a:visited, a:hover, a:active {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      }
+
 
 
 
