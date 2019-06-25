@@ -1,0 +1,77 @@
+export default `<head>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="https://kit.fontawesome.com/cc3517d0c1.js"></script>
+        
+    </head>
+    <body>  
+        <form>
+            <div id="greeting"></div>
+            <b>
+            <b>
+            <div>
+            <input type="text"  placeholder="First Name" name="firstname"/>
+            <br>
+            <input type="text"  placeholder="Last Name" name="lastname"/>
+            <br>
+            <input type="password"  placeholder="your.email@example.com"/> 
+            <br>    
+            <input type="email" />
+          
+            <br>
+        </div>
+        <div>
+            <input type="radio" name="subject" value="Professional" id="Professional"/>
+            <label for="Professional"> Professional message </label>
+        </div>  
+        <div>
+            <input type="checkbox" name="opt-in" value="opt-in" checked /> Add me to your email
+            <input type="checkbox" name="opt-in-weekly" value="opt-in-weekly" /> Send me weekly emails
+            
+            disabled <option value=""></option>
+        <div>
+                <label for="marketing">How did you hear about me?</label>
+                <select name="marketing">
+                  <optgroup label="Online">
+                    <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+                    <option value="github">Online Portfolio (GitHub)</option>
+                    <option value="search">Search Engine</option>
+                    <option value="email">Email</option>
+                  </optgroup>
+                  <optgroup label="In-Person">
+                    <option value="networking">We met at a networking event</option>
+                    <option value="referral">Personal referral</option>
+                    <option value="random">We met somewhere else</option>
+                  </optgroup>
+                  <option value="other">Other</option>
+                </select>
+            <div>
+                <textarea name="user_message" placeholder="Please leave me a comment!"rows="8" cols="40" maxlength="500"></textarea>
+
+            </div>
+            <nav id="nav">
+                <a href="../index.html">home</a> |
+                <a href="../blog/index.html">blog</a> |
+                <a href="../projects/index.html">projects</a>
+            </nav>
+            <form action="form-responses/new" method="POST"></form>
+            
+        </div>
+        <br>    
+        <i class="fas fa-camera fa-lg"></i>
+
+        </div>
+        <script type="text/javascript">
+            prompt('What is your name?');
+            alert('Hello World!');
+          </script>
+<script type="text/javascript" src="index.js"></script>
+
+
+
+
+
+
+            <input type="submit" />
+        </form>
+    </body>
+    `;
