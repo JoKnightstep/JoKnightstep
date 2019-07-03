@@ -17,4 +17,5 @@ export default `
                 <div class="grid-item">Career Paths</div>
                 <div class="grid-item">Wrap Up</div>
               </div>
-              `
+
+              `;  
