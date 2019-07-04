@@ -1,5 +1,5 @@
-export default `
+export default (state) => `
     <main>
-    <h6> Main header Comp </h6>
+    <h6> ${state.title}  </h6>
     </main>
     `;  

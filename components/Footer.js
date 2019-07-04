@@ -1,5 +1,5 @@
-export default `
+export default (state) => `
 <footer>
-<p>Footer Component</p>
+<p> ${state.title} </p>
 </footer>
 `;  
