@@ -1,4 +1,4 @@
-export default `
+export default (state)=>`
 <body>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
         <script type="text/javascript" src="index.js"></script>
