@@ -1,4 +1,5 @@
-export default `<head>
+export default (state)=>`
+    <head>
         <link rel="stylesheet" href="../css/style.css" type="text/css">
         <script src="https://kit.fontawesome.com/cc3517d0c1.js"></script>
         

@@ -1,28 +1,57 @@
 import Navigation from "./components/Navigation.js";
-import Blog from "./components/Blog.js";
-import Contact from "./components/Contact.js";
-import Project from "./components/Project.js";
+import Header from "./components/Header.js";
+import Content from "./components/Content.js";
+import Footer from "./components/Footer.js";
 
 
-function looper() {
-  for (x=1; x<21; x++) {
-      console.log(x);
+//import * pages from "./components/pages"; 
+
+
+
+const root = document.querySelector("#root");
+
+let state = {
+  'Header' : {
+    title : "Header title"
+  },
+  'Content' : {
+    title : "Content title"
+  },
+  'Footer' : {
+    title : "Footer title"
+  },
+  'Navigation' : {
+    title : "Navigation title"
   }
-  };
 
-  import Navigation from "./components/Navigation.js"
-  console.log(Navigation);
-
-  const initialHTML = document.body.innerHTML;
-
-  document.body.innerHTML = `${Navigation}${initialHTML}`;
+};
 
 
-
-
-for (var i=1; i < 101; i++){
-  if (i % 15 == 0) console.log("FizzBuzz");
-  else if (i % 3 == 0) console.log("Fizz");
-  else if (i % 5 == 0) console.log("Buzz");
-  else console.log(i);
+function render(state) {
+    console.log("this is my state;", state);
+    root.innerHTML = `
+    ${Navigation(state.Navigation)}
+    ${Header(state.Header)}
+    ${Content(state.Content)}
+    ${Footer(state.Footer)}
+  `;
 }
+
+render(state);
+
+
+
+
+//upon clicking, we need to know what we clicked on and match to it's respective pg 
+
+//look for a click event on Nav bar 
+let links = document.querySelectorAll('nav li a')
+.forEach((link) => link.addEventListener('click', (event) => {
+
+
+//override default behavior
+event.preventDefault();
+console.log("textContent:", event.target.textContent);
+
+})
+);
